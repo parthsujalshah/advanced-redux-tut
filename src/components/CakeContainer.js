@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import buyCake from '../store/index'
+import { buyCake } from '../store/actions/cake';
 
 const CakeContainer = props => {
   return (
@@ -13,7 +13,7 @@ const CakeContainer = props => {
 
 const mapStateToProps = state => {
   return {
-    numberOfCakes: state.numberOfCakes
+    numberOfCakes: state.cake.numberOfCakes
   }
 };
 
