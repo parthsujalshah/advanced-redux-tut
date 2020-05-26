@@ -1,6 +1,6 @@
 export const BUY_CAKE = 'BUY_CAKE'
 
-const buyCake = () => {
+export const buyCake = () => {
   return {
     type: BUY_CAKE
   };
